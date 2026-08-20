@@ -1,0 +1,1 @@
+Foja for LibreOffice Writer: notarial page formats, tools (CUIT, numbers to words), simple copy watermark, printing, TTS, and Pag/Lin status bar.

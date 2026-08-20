@@ -1,0 +1,1 @@
+"""Foja package."""

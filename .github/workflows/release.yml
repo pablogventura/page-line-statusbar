@@ -1,0 +1,76 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resolve version
+        id: version
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          VERSION="${TAG#v}"
+          echo "version=${VERSION}" >> "${GITHUB_OUTPUT}"
+          echo "tag=${TAG}" >> "${GITHUB_OUTPUT}"
+
+      - name: Set extension version
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          sed -i "s/<version value=\"[^\"]*\"\\/>/<version value=\"${VERSION}\"\\/>/" oxt/description.xml
+
+      - name: Build OXT
+        run: |
+          chmod +x scripts/build_oxt.sh
+          ./scripts/build_oxt.sh
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/foja.oxt
+          generate_release_notes: true
+          fail_on_unmatched_files: true
+
+      - name: Commit update feed on main
+        run: |
+          set -euo pipefail
+          VERSION="${{ steps.version.outputs.version }}"
+          REPO="${{ github.repository }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git checkout -B main origin/main
+
+          sed -i "s/<version value=\"[^\"]*\"\\/>/<version value=\"${VERSION}\"\\/>/" oxt/description.xml
+
+          cat > dist/update.xml <<EOF
+          <?xml version="1.0" encoding="UTF-8"?>
+          <description
+            xmlns="http://openoffice.org/extensions/description/2006"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <identifier value="org.foja.writer"/>
+            <version value="${VERSION}"/>
+            <update-download>
+              <src xlink:href="https://github.com/${REPO}/releases/latest/download/foja.oxt"/>
+            </update-download>
+          </description>
+          EOF
+
+          sed -i 's/^[[:space:]]*//' dist/update.xml
+
+          git add dist/update.xml oxt/description.xml
+          if git diff --staged --quiet; then
+            echo "No feed changes to commit"
+            exit 0
+          fi
+          git commit -m "chore(release): bump update feed to v${VERSION}"
+          git push origin main

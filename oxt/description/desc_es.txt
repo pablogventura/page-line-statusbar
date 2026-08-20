@@ -1,0 +1,1 @@
+Foja para LibreOffice Writer: formatos notariales, herramientas (CUIT, numeros a letras), copia simple, impresion, lectura TTS y barra de estado Pag/Lin.

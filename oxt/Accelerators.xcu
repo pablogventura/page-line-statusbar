@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data
+  xmlns:oor="http://openoffice.org/2001/registry"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  oor:name="Accelerators"
+  oor:package="org.openoffice.Office">
+  <node oor:name="PrimaryKeys">
+    <node oor:name="Modules">
+      <node oor:name="com.sun.star.text.TextDocument">
+        <node oor:name="F5" oor:op="replace">
+          <prop oor:name="Command">
+            <value>vnd.foja:buscar_comodin</value>
+          </prop>
+        </node>
+        <node oor:name="F9" oor:op="replace">
+          <prop oor:name="Command">
+            <value>vnd.foja:cuit</value>
+          </prop>
+        </node>
+        <node oor:name="F11" oor:op="replace">
+          <prop oor:name="Command">
+            <value>vnd.foja:protocolo</value>
+          </prop>
+        </node>
+        <node oor:name="F12" oor:op="replace">
+          <prop oor:name="Command">
+            <value>vnd.foja:intervencion</value>
+          </prop>
+        </node>
+        <node oor:name="Ctrl_F11" oor:op="replace">
+          <prop oor:name="Command">
+            <value>vnd.foja:protocolo_rev</value>
+          </prop>
+        </node>
+        <node oor:name="Ctrl_F12" oor:op="replace">
+          <prop oor:name="Command">
+            <value>vnd.foja:intervencion_rev</value>
+          </prop>
+        </node>
+      </node>
+    </node>
+  </node>
+</oor:component-data>

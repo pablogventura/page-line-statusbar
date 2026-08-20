@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description
+  xmlns="http://openoffice.org/extensions/description/2006"
+  xmlns:d="http://openoffice.org/extensions/description/2006"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <identifier value="org.foja.writer"/>
+  <version value="0.1.0"/>
+  <display-name>
+    <name lang="en">Foja</name>
+    <name lang="es">Foja</name>
+  </display-name>
+  <publisher>
+    <name xlink:href="https://github.com/pablogventura/page-line-statusbar" lang="en">Pablo Ventura</name>
+  </publisher>
+  <extension-description>
+    <src xlink:href="description/desc_es.txt" lang="es"/>
+    <src xlink:href="description/desc_en.txt" lang="en"/>
+  </extension-description>
+  <dependencies>
+    <OpenOffice.org-minimal-version value="4.1" d:name="LibreOffice 4.1"/>
+  </dependencies>
+  <update-information>
+    <src xlink:href="https://raw.githubusercontent.com/pablogventura/page-line-statusbar/main/dist/update.xml"/>
+  </update-information>
+  <registration>
+    <simple-license accept-by="admin" suppress-on-update="true">
+      <license-text xlink:href="LICENSE" lang="en"/>
+    </simple-license>
+  </registration>
+  <platform value="all"/>
+</description>
