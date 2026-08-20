@@ -18,119 +18,9 @@
           <value>com.sun.star.text.TextDocument</value>
         </prop>
         <node oor:name="Submenu">
-          <node oor:name="m_prot" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:protocolo</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Prot.(Anv) - F11</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_protr" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:protocolo_rev</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Prot.(Rev) - Ctrl+F11</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_int" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:intervencion</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Inter.(Anv) - F12</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_intr" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:intervencion_rev</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Inter.(Rev) - Ctrl+F12</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_sep1" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>private:separator</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value></value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_a4" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:a4</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Foja p/Nota (A4)</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_legal" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:legal</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Foja p/Nota (Legal)</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_ba4" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:boleto_a4</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Boletos/Contratos (A4)</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_blegal" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:boleto_legal</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Boletos/Contratos (Legal)</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_sim" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:simetricas</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Paginas simetricas</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_copia" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:copia_simple</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Copia Simple</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_sep2" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>private:separator</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value></value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_cuit" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:cuit</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Generar CUIT - F9</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
           <node oor:name="m_nro" oor:op="replace">
             <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:nro_letras</value></prop>
             <prop oor:name="Title" oor:type="xs:string"><value>De N a Letras</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_ent" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:entrelinear</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Entrelinear</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_leer" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:leer</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Leer</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_params" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:params</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Parametros</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_sep3" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>private:separator</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value></value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_prev" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:preview</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Vista Previa</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_podd" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:print_odd</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Paginas Impares</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_peven" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:print_even</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Paginas Pares</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_pcur" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:print_current</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Pagina Vigente</value></prop>
-            <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          </node>
-          <node oor:name="m_pall" oor:op="replace">
-            <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:print_all</value></prop>
-            <prop oor:name="Title" oor:type="xs:string"><value>Imprimir</value></prop>
             <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
           </node>
         </node>
@@ -139,57 +29,9 @@
 
     <node oor:name="OfficeToolBar">
       <node oor:name="org.foja.writer.toolbar" oor:op="replace">
-        <node oor:name="tb_prot" oor:op="replace">
-          <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:protocolo</value></prop>
-          <prop oor:name="Title" oor:type="xs:string"><value>Prot.(Anv)</value></prop>
-          <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
-        </node>
-        <node oor:name="tb_protr" oor:op="replace">
-          <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:protocolo_rev</value></prop>
-          <prop oor:name="Title" oor:type="xs:string"><value>Prot.(Rev)</value></prop>
-          <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
-        </node>
-        <node oor:name="tb_int" oor:op="replace">
-          <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:intervencion</value></prop>
-          <prop oor:name="Title" oor:type="xs:string"><value>Inter.(Anv)</value></prop>
-          <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
-        </node>
-        <node oor:name="tb_intr" oor:op="replace">
-          <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:intervencion_rev</value></prop>
-          <prop oor:name="Title" oor:type="xs:string"><value>Inter.(Rev)</value></prop>
-          <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
-        </node>
-        <node oor:name="tb_copia" oor:op="replace">
-          <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:copia_simple</value></prop>
-          <prop oor:name="Title" oor:type="xs:string"><value>Copia Simple</value></prop>
-          <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
-        </node>
-        <node oor:name="tb_cuit" oor:op="replace">
-          <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:cuit</value></prop>
-          <prop oor:name="Title" oor:type="xs:string"><value>CUIT</value></prop>
-          <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
-        </node>
         <node oor:name="tb_nro" oor:op="replace">
           <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:nro_letras</value></prop>
           <prop oor:name="Title" oor:type="xs:string"><value>N a Letras</value></prop>
-          <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
-        </node>
-        <node oor:name="tb_leer" oor:op="replace">
-          <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:leer</value></prop>
-          <prop oor:name="Title" oor:type="xs:string"><value>Leer</value></prop>
-          <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
-          <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
-        </node>
-        <node oor:name="tb_params" oor:op="replace">
-          <prop oor:name="URL" oor:type="xs:string"><value>vnd.foja:params</value></prop>
-          <prop oor:name="Title" oor:type="xs:string"><value>Parametros</value></prop>
           <prop oor:name="Target" oor:type="xs:string"><value>_self</value></prop>
           <prop oor:name="Context" oor:type="xs:string"><value>com.sun.star.text.TextDocument</value></prop>
         </node>

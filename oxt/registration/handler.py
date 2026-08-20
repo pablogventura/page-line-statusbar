@@ -31,27 +31,7 @@ STATUS_COMMAND = PROTOCOL_PREFIX + "status"
 THROTTLE_SECONDS = 0.15
 
 ACTIONS = {
-    "protocolo",
-    "protocolo_rev",
-    "intervencion",
-    "intervencion_rev",
-    "a4",
-    "legal",
-    "boleto_a4",
-    "boleto_legal",
-    "simetricas",
-    "copia_simple",
-    "entrelinear",
     "nro_letras",
-    "cuit",
-    "params",
-    "buscar_comodin",
-    "preview",
-    "print_odd",
-    "print_even",
-    "print_current",
-    "print_all",
-    "leer",
     "status",
 }
 
